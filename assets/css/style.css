@@ -1,0 +1,112 @@
+body
+{
+	margin: 2px;
+	padding: 0px;
+	border: solid 5px black;
+}
+#entete
+{
+	text-transform: uppercase;
+	font-size: 3em;
+	padding: 15px 0px;
+	text-align: center;
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin: 0px;
+	font-family: "Algerian", Agency FB;
+}
+#menu
+{
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	border-top: solid 2px white;
+	background-color: black;
+}
+#menu ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+#menu li
+{
+	display: inline;
+}
+#menu li a
+{
+	padding: 10px;
+	color: white;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-left: 2px solid white;
+}
+/* Cible le dernier lien du menu */
+#menu ul :last-child a
+{
+	border-right: 2px solid white;
+}
+#menu li a.menu_actif
+{
+	border-bottom: solid 5px green;
+}
+#contenu
+{
+	padding: 10px;
+}
+#contenu h1, #contenu h2
+{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 5px;
+}
+#contenu h1,#contenu h1 a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-style: italic;
+	color: rgba(0, 0, 255, 0.7);
+}
+#contenu h2,#contenu h2 a
+{
+	text-decoration: none;
+	color: green;
+}
+#contenu h3
+{
+	margin: 0px;
+	margin-top: 10px;
+	text-align: center;
+	font-style: italic;
+}
+.fiche_joueur
+{
+	margin: 15px;
+	padding: 10px;
+	border:3px solid black;
+	border-radius: 20px;
+	background-color: rgba(0, 255, 0, 0.1);
+	box-shadow: 6px 6px 1px black;
+}
+/* Le première fiche de la liste aura sa propre marge */
+.fiche_joueur:first-child
+{
+	margin-top: 10px;
+}
+/* La fiche d'affichage d'un seul joueur n'est pas concernée par la redéfinition de la marge */
+.fiche_joueur:last-child
+{
+	margin-top: 15px;
+}
+.fiche_joueur p
+{
+	line-height: 1.5;
+	text-align: justify;
+}
+
+.message
+{
+	font-size: 2em;
+}
