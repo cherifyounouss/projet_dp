@@ -16,7 +16,9 @@ class ConnexionDB
     public static function getInstance() {
         if (is_null(self::$instance)) {
             try {
-                self::$instance = new PDO('mysql:host='.self::$_host.';dbname='.self::$_database.';charset=utf8', self::$_user, self::$_password);
+                self::$instance = new PDO('mysql:host='.self::$_host.';dbname='.self::$_database.';charset=utf8', self::$_user, self::$_password, array(
+                PDO::ATTR_PERSISTENT => true
+                ));
             } catch (Exception $e) {
                 die("Erreur de connexion à la base de données : ".$e);
             }
